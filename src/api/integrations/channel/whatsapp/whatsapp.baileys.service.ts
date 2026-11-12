@@ -2540,7 +2540,7 @@ export class BaileysStartupService extends ChannelStartupService {
         }
       }
 
-      this.logger.verbose(messageSent);
+      this.logger.verbose(`Message sent: ${messageSent.key.id}`);
 
       this.sendDataWebhook(Events.SEND_MESSAGE, messageRaw);
 
